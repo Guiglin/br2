@@ -1,0 +1,8 @@
+config BR2_PACKAGE_HOST_CHIP_NAND_SCRIPTS
+        bool "CHIP-nand-scripts"
+	select BR2_PACKAGE_HOST_MTD
+	select BR2_PACKAGE_HOST_UBOOT_TOOLS
+	select BR2_PACKAGE_HOST_ANDROID_TOOLS
+	select BR2_PACKAGE_HOST_ANDROID_TOOLS_FSUTILS
+        help
+          The CHIP-nand-scripts generate images that can be flashed to CHIP's NAND.
